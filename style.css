@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+  }
+.header {
+    height: 10rem;
+    background: #935347;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: #ede9ce;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+}
+#players {
+    min-height: 100vh;
+}
+.buttons {
+    height: 2.2rem;
+    background:black;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#addPlayer {
+    border: none;
+    height: 2.2rem;
+    width: 15%;
+    background: black;
+    color: #ede9ce;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    outline: none; 
+}
+#addPlayer:hover {
+    background: #64706c;
+    cursor: pointer;
+}
+#players {
+    display: block;
+    margin-top: 2rem;
+}
+.playerDivGroup {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    height: 5rem;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 0.5rem;
+}
+.names {
+    color:#ede9ce;
+    background: #935347;
+    font-size:2.5rem;
+    flex: 3;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5%;
+        
+}
+.results { 
+    color:#ede9ce;
+    background: #64706c;
+    font-size:2.5rem;
+    flex: 1;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5%;
+    
+}
+.scoreBtn {
+    flex: 1;
+    height: 30px;
+    width: auto;
+    top: 50%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5%;
+    border: none;
+    font-family: 'Bree Serif', serif;
+    font-size:1.5rem;
+    background: #c7ad88;
+    color: #64706c;
+    outline: none;    
+}
+.scoreBtn:hover {
+    background: #ede9ce;
+    color: #64706c;
+    cursor: pointer;
+}
+.deleteBtn {
+    flex: 0.3;
+    height: 30px;
+    width: auto;
+    top: 50%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5%;
+    border: none;
+    font-family: 'Bree Serif', serif;
+    font-size:1rem;
+    background: #c7ad88;
+    color: #935347;
+    outline: none;
+}
+.deleteBtn:hover {
+    background: #ede9ce;
+    color: #935347;
+    cursor: pointer;
+}
+footer {
+    height: 4rem;
+    background: black;
+    color: #ede9ce;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
