@@ -4,6 +4,7 @@
     text-align: center;
     outline: none;
   }
+
 .header {
     height: 10rem;
     background: #935347;
@@ -49,6 +50,18 @@
     height: 5rem;
     font-family: 'Bree Serif', serif;
     margin-bottom: 0.5rem;
+    animation: comeIn 500ms ease-in-out  forwards;
+    transform-origin: left;
+}
+@keyframes comeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .names {
     color:#ede9ce;
@@ -97,12 +110,10 @@
     cursor: pointer;
 }
 .deleteBtn {
-    flex: 0.3;
-    height: 30px;
-    width: auto;
+    display: none; 
+    flex: 0;
     top: 50%;
     height: 5rem;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0 5%;
@@ -112,11 +123,31 @@
     background: #c7ad88;
     color: #935347;
     outline: none;
+    transition: all 0.2s;
+    opacity: 0;
+    
 }
 .deleteBtn:hover {
     background: #ede9ce;
     color: #935347;
     cursor: pointer;
+}
+.playerDivGroup:hover .deleteBtn {
+    display: flex;
+    flex: 0.3;
+    opacity: 1;
+    animation: moveIN 400ms ease-in-out  forwards;
+    
+}
+@keyframes moveIN {
+    0% {
+        opacity: 0;
+        transform: translate(-10);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 footer {
     height: 4rem;
@@ -127,4 +158,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+footer a {
+    color: white; 
+    font-size: 1.2rem;
+    transition: color 300;
+}
+footer a:hover {
+    color: #935347;
 }
